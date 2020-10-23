@@ -21,7 +21,7 @@ services:
     build:
       context: .
       args: 
-          - WAR_FILE=../target/tasks-backend.war
+          - WAR_FILE=target/tasks-backend.war
           - CONTEXT=tasks-backend
     # ports: 
     #   - 9999:8080
@@ -41,7 +41,7 @@ services:
     build:
       context: .
       args: 
-          - WAR_FILE=../frontend/target/tasks.war
+          - WAR_FILE=frontend/target/tasks.war
           - CONTEXT=tasks
     ports: 
       - 9999:8080
